@@ -1,0 +1,8 @@
+# Ignore build logs and temp files
+*.log
+*.tmp
+target/
+node_modules/
+build/
+dist/
+
