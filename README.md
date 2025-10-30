@@ -39,7 +39,7 @@ The pipeline will start automatically on push.
 ✅ Frontend Build Successful
 
 ## 🐳 Docker Run Commands
-🔹 1. Backend (Task 1)
+### 🔹 1. Backend (Task 1)
 
 Your Spring Boot backend runs on port 8080.
 If MongoDB is running locally or in another container, we’ll also link it.
@@ -73,10 +73,14 @@ docker run -d \
   task1-backend:latest
 ```
 
-* create a mongodb free account and create a username and password to access the Database
+* create a mongodb free account
+* create a username and password to access the Database
+
 
 3. Access backend:
 👉 http://localhost:8080/api/tasks
+
+![Task Creation](https://github.com/Vishalshanmugam/Task4/blob/main/Screenshot/screenshot2.png)
 
 ### 🔹 2. Frontend (Task 3)
 
@@ -90,3 +94,15 @@ docker run -d \
   -e REACT_APP_API_URL=http://localhost:8080/api \
   task3-frontend:latest
 ```
+![Task Creation](https://github.com/Vishalshanmugam/Task4/blob/main/Screenshot/screenshot1.png)
+
+
+## Result
+
+Result can be checked using curl command
+
+```bash
+curl http://loclahost:8080
+```
+
+![Task Creation](https://github.com/Vishalshanmugam/Task4/blob/main/Screenshot/screenshot3.png)
